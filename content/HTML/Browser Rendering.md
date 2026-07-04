@@ -10,4 +10,7 @@ draft: false
 ## Browser Structure
 ![[images/browser_structure.png]]
 
-Sync Working
+
+## HTML
+
+if we do getElementByTagName then we will get a NodeList not Array or javascript native data type.
