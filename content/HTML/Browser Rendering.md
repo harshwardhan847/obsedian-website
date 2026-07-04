@@ -23,7 +23,7 @@ Now, on each element we have 2 major operations:-
 
 - Load File (HTML).     - **DOCUMENT** 
 - Raw Bites (conversion of HTML to 0,1)
-- Character encoding ( UTF-8 ) -> Tokenisation -> h1, p, html, body
+- Character encoding ( UTF-8 ) -> [[Tokenisation]] -> h1, p, html, body
 - Converts to an Object - **OBJECT**
 ```
 	{
