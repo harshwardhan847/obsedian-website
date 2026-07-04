@@ -10,3 +10,4 @@ draft: false
 ## Browser Structure
 ![[images/browser_structure.png]]
 
+Sync Working
