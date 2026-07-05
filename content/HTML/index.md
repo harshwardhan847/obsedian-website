@@ -14,7 +14,7 @@ That's where browser internals, parsing algorithms, rendering, accessibility, pe
 # Here are the advanced HTML concepts most developers never study
 ---
 
-# 1. HTML Tokenization ⭐⭐⭐⭐⭐
+# 1. HTML Tokenisation ⭐⭐⭐⭐⭐
 
 The browser never reads HTML tag-by-tag.
 

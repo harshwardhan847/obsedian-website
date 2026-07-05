@@ -1,17 +1,18 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Harsh Tech Blogs
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: harsh_quartz_notes.vercel.app
+  baseUrl: obsedian-website.vercel.app
   ignorePatterns:
     - private
-    - templates
+    - Templates
     - .obsidian
+    - Excalidraw
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
