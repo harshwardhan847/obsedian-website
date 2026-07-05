@@ -13,6 +13,7 @@ draft: false
 
 ---
 
+
 # Browser Architecture
 
 ```mermaid
