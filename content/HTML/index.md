@@ -12,7 +12,6 @@ draft: false
 
 That's where browser internals, parsing algorithms, rendering, accessibility, performance, and the HTML specification come in.
 
-
 # Here are the advanced HTML concepts most developers never study
 ---
 
