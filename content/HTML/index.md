@@ -1,5 +1,5 @@
 ---
-title: How does the browser actually understand HTML?
+title: HTML
 tags:
   - html
   - browser
@@ -8,6 +8,8 @@ tags:
   - tokenization
 draft: false
 ---
+# How does the browser actually understand HTML?
+
 That's where browser internals, parsing algorithms, rendering, accessibility, performance, and the HTML specification come in.
 
 

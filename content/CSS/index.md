@@ -1,5 +1,5 @@
 ---
-title: CSS Impurtant Concepts
+title: CSS
 tags:
   - css
   - styling
