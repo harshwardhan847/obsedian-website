@@ -11,8 +11,6 @@ draft: false
 
 > How a browser converts HTML, CSS, and JavaScript into pixels on your screen.
 
-![[test.excalidraw]]
-
 ---
 
 
