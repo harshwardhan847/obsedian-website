@@ -357,25 +357,32 @@ The browser must finish CSS parsing before returning the computed values.
 
 ```mermaid
 gantt
-title Script Loading Timeline
+title Corrected Script Loading Timeline
 dateFormat X
 axisFormat %s
 
-section HTML
-Parsing :active, 0,10
+section HTML Parsing
+HTML Phase 1 (Initial)        :active, p1, 0, 3
+HTML Paused (Normal Exec)    :crit, normal_pause, 3, 5
+HTML Phase 2 (Resumed)        :active, p2, 5, 7
+HTML Paused (Async Exec)     :crit, async_pause, 7, 9
+HTML Phase 3 (Final Screen)   :active, p3, 9, 12
+HTML Complete (DOM Ready)     :milestone, dom_ready, 12, 0
 
-section Normal
-Download :1,2
-Execute :3,2
+section Normal Script
+Download (Blocks Parsing)     :1, 2
+Execute (Blocks Parsing)      :normal_exec, 3, 2
 
-section Defer
-Download :1,6
-Execute :10,2
+section Async Script
+Download (In Parallel)        :4, 3
+Execute (Interrupts Parsing)  :async_exec, 7, 2
 
-section Async
-Download :1,3
-Execute :4,2
+section Defer Script
+Download (In Parallel)        :1, 5
+Execute (Post-Parsing Only)   :after dom_ready, 2
+
 ```
+
 
 ---
 

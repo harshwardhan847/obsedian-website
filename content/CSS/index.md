@@ -16,8 +16,13 @@ They aren't.
 
 They participate in the cascade.
 
-```
-:root{    --primary: royalblue;}button{    background: var(--primary);}
+```css
+:root{    
+	--primary: royalblue;
+}
+button{    
+	background: var(--primary);
+}
 ```
 
 Unlike Sass variables:
@@ -92,19 +97,22 @@ This is one of the most powerful areas of modern CSS.
 
 ## Method 1 — CSS Variables
 
-```
+```html
 <div class="card"></div>
 ```
 
-```
-.card{    --rotation:20deg;    transform:rotate(var(--rotation));}
+```css
+.card{
+    --rotation:20deg;
+    transform:rotate(var(--rotation));
+}
 ```
 
 ---
 
 JavaScript
 
-```
+```css
 card.style.setProperty(    "--rotation",    "70deg");
 ```
 
@@ -120,13 +128,13 @@ Just changing data.
 
 HTML
 
-```
+```html
 <div data-theme="dark">
 ```
 
 CSS
 
-```
+```css
 [data-theme="dark"]{    background:black;}
 ```
 
@@ -140,12 +148,14 @@ Very common in component libraries.
 
 Modern CSS allows reading attributes.
 
-```
+```html
 <div data-size="40">
 ```
 
-```
-.box{    width:attr(data-size px);}
+```css
+.box{    
+	width:attr(data-size px);
+}
 ```
 
 Support for typed `attr()` outside generated content is still evolving across browsers, so check compatibility before relying on it in production.
@@ -460,14 +470,14 @@ Tell browser
 
 "This component is isolated."
 
-```
+```css
 contain:layout;
 ```
 
 Or
 
-```
-contain:layoutpaintstylesize
+```css
+contain:layout paint style size
 ```
 
 Improves rendering performance.
@@ -478,7 +488,7 @@ Improves rendering performance.
 
 Massive performance improvement.
 
-```
+```css
 content-visibility:auto;
 ```
 
@@ -494,7 +504,7 @@ Tell browser
 
 "I'm about to animate."
 
-```
+```css
 will-change:transform;
 ```
 
@@ -508,7 +518,7 @@ One of CSS's hardest concepts.
 
 Many developers think
 
-```
+```css
 z-index:999999;
 ```
 
