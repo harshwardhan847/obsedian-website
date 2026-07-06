@@ -77,8 +77,8 @@ echo Hello there | grep there
 #### Output Redirection
 
 **Symbols used** :-
-- > symbol to write to a file
-- >> to append to a file
+- '>' symbol to write to a file
+- '>>' symbol to append to a file
 ```bash
 echo Hello World! > hello.txt
 echo Hello World >> hello.txt
@@ -109,6 +109,57 @@ cat << EOF
 wc -w <<< "Hello there wordcount!"
 # 3
 ```
+
+#### Test Operators
+
+```bash
+[hello = hello]
+echo $? # gives exit code of last executed command
+# 0 // means command was executed without any issues
+[1 = 0]
+echo $?
+# 0
+[1 -eq 1]
+echo $?
+# 0
+```
+
+#### Conditionals (if/elif/else)
+
+```bash
+#!/bin/bash
+
+if [ ${1,,} = harsh ]; then
+	echo "Oh, you're the boss here. Welcome!"
+elif [ ${1,,} = help ]; then
+	echo "Just enter your username, duh!"
+else
+	echo "I don't know who you are. But you'are not the boss of me!"
+fi
+```
+
+#### Case Statements
+
+```bash
+#!/bin/bash
+
+case ${1,,} in
+	harsh | administrator)
+		echo "Hello, you'r the boss here!"
+		;;
+	help)
+		echo "Just enter your username!"
+		;;
+	*)
+		echo "Hello there. You're not the boss of me. Enter a valid username!"
+esac
+
+# ./login.sh harsh
+# > Hello you're the boss here!
+
+```
+
+#### Arrays
 
 
 
