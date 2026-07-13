@@ -161,6 +161,36 @@ esac
 
 #### Arrays
 
+```bash
+$ MY_FIRST_LIST=(one two three four five)
+$ echo $MY_FIRST_LIST
+# one
+$ echo ${MY_FIRST_LIST[@]}
+# one two three four five
+$ echo ${MY_FIRST_LIST[0]}
+# one
+```
 
+#### For Loop
 
+```bash
+for item in ${MY_FIRST_LIST[@]}; do echo -n $item | wc -c; done
+```
 
+#### Functions
+
+```bash
+#!/bin/bash
+
+showuptime(){
+	up=$(uptime -p | cut -c4-)
+	since=$(uptime -s)
+	cat << EOF
+-----
+This machine has been up for ${up}
+It has been running since ${since}
+-----
+EOF
+}
+showuptime
+```

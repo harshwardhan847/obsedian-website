@@ -5,8 +5,10 @@ tags:
   - terminal
   - scripting
   - shell
+  - linux
 ---
 # Bash & Terminal Cheat Sheet for Programmers
+
 > A complete reference from beginner to advanced.
 
 ---
